@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="pl" ng-app="clash-of-clans-calculator">
 <head>
-    <title>Hello Spring Boot!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <!--<div th:include="fragments/js :: jquerys" th:remove="tag"/>-->
-    <!--<th:block th:include="fragments/js :: bootstrap"/>-->
-
-    <script type="text/javascript" th:src="@{/js/bootstrap-theme.min.css}"></script>
+    <th:block th:include="fragments/meta :: meta"/>
+    <title>PJATK - System składania podań</title>
+    <th:block th:include="fragments/css :: css"/>
 </head>
-<body>
-<p>Hello Spring Boot!av </p>
 
+<body id="page-top">
+<div class="logo-panel">
+    <div class="logo">
+    <img src="http://www.pja.edu.pl/templates/pjwstk/images/logo-lg-md.png"/>
+    </div>
+</div>
+<div ui-view=""></div>
+
+<script src="/js/angular/angular.min.js"></script>
+<script src="/js/angular/angular-ui-router.min.js"></script>
+<script src="/js/pjwstk/app.modules.js"></script>
+<script src="/js/pjwstk/app.routes.js"></script>
 </body>
 </html>
