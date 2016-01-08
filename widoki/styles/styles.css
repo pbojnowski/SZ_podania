@@ -1,0 +1,43 @@
+.logo-panel .logo {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.login-panel label {
+  font-weight: bold;
+}
+.login-panel .btn-success {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.pass-panel label {
+  font-weight: bold;
+}
+textarea {
+  min-height: 500px;
+}
+.menu {
+  background-color: #c6233e;
+  min-width: 50px;
+  min-height: 100%;
+}
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
